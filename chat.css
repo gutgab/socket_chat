@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "lat-izq ventana lat-der";
+    grid-template-columns: minmax(150px,20%) minmax(350px,1fr) minmax(220px,25%);
+}
+.izq{
+    grid-area: "lat-izq";
+    background-color: blue;
+}
+.der{
+    grid-area: "lat-der";
+    background-color: red;
+}
+.chat-container{
+    grid-area: "ventana";
+    background-color: green;
+}
