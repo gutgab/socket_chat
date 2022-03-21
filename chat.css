@@ -10,15 +10,28 @@
     grid-template-areas: "lat-izq ventana lat-der";
     grid-template-columns: minmax(150px,20%) minmax(350px,1fr) minmax(220px,25%);
 }
+.chat-container{
+    grid-area: "ventana";
+    background-color: #f7fee7;
+}
+.lateral{
+    background-color: #a3e635;
+    padding: 5%;
+}
 .izq{
     grid-area: "lat-izq";
-    background-color: blue;
 }
 .der{
     grid-area: "lat-der";
-    background-color: red;
+    
 }
-.chat-container{
-    grid-area: "ventana";
-    background-color: green;
+.info,.calificaciones,.tabs{
+    margin-bottom: 2px;
+    background-color: #f7fee7;
+    border-radius: 5px;
+    border: 1px #d9f99d solid;
+    height: 100%;
+}
+.izq>div{
+    height: 50%;
 }
