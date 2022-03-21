@@ -12,10 +12,17 @@
 }
 .chat-container{
     grid-area: "ventana";
-    background-color: #f7fee7;
+    background-color: #4ade80;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    gap: 5px;
+}
+.chat-container>div{
+    border: 2px #bbf7d0 solid;
 }
 .lateral{
-    background-color: #a3e635;
+    background-color: #4ade80;
     padding: 5%;
 }
 .izq{
@@ -26,12 +33,49 @@
     
 }
 .info,.calificaciones,.tabs{
-    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #f7fee7;
     border-radius: 5px;
-    border: 1px #d9f99d solid;
+    border: 2px #bbf7d0 solid;
     height: 100%;
+}
+.izq{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .izq>div{
     height: 50%;
 }
+.chat-ventana{
+    border-radius: 5px;
+    flex:1;
+    background-color: #f7fee7;
+}
+.chat-entrada{
+    height: 5%;
+    border-radius: 5px;
+    background-color: #f7fee7;
+    display: flex;
+}
+.chat-entrada>input{
+    border-style: none;
+    text-indent: 10px;
+    flex: 1;
+}
+.chat-entrada>button{
+    border-radius: 50px;
+    background-color: #86efac;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.chat-entrada>button:hover{
+    background-color: #22c55e;
+}
+/* .chat-entrada>button>img{
+} */
