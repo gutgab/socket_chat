@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="chat.css">
-    <script defer src="chat.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='chat.css') }}">
+    <script defer src="{{ url_for('static', filename='chat.js') }}"></script>
     <title>Web chat</title>
 </head>
+
 <body>
     <div class="main-container">
         <div class="lateral izq">
@@ -20,7 +22,8 @@
             <div class="chat-ventana"></div>
             <div class="chat-entrada">
                 <input id="entrada" type="text">
-                <button type="submit"><img src="./assets/enviar.png" alt=""></button>
+                <button id="btn_enviar"><img src="{{ url_for('static', filename='./assets/enviar.png') }}"
+                        alt=""></button>
             </div>
         </div>
         <div class="lateral der">
@@ -31,5 +34,7 @@
             </div>
         </div>
     </div>
+    <script src="{{ url_for('static', filename='socket.io.js') }}"></script>
 </body>
+
 </html>
