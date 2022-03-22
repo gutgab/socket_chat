@@ -51,10 +51,13 @@
 }
 .chat-ventana{
     border-radius: 5px;
-    flex:1;
+    flex:1 0 0;
     background-color: #f7fee7;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #0891b2;
 }
 .chat-entrada{
     height: 5%;
@@ -82,6 +85,7 @@
 /* .chat-entrada>button>img{
 } */
 .msg{
+    align-self: self-end;
     width: 50%;
     border-radius: 5px;
     margin: 3px;
@@ -90,7 +94,6 @@
     background-color: #dcfce7;
 }
 .msg-recibido{
-    align-self: self-end;
     width: 50%;
     border-radius: 5px;
     margin: 3px;

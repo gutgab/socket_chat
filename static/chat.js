@@ -11,6 +11,8 @@ const enviarMsg = ()=>{
         div.classList.add("msg")
         ventanaChat.appendChild(div);
         inputEnviar.value = "";
+        ventanaChat.appendChild(div);
+        ventanaChat.scrollTop = ventanaChat.scrollHeight;
     }
 }
 
@@ -28,5 +30,6 @@ socket.on("message",(msg)=>{
         div.textContent= msg;
         div.classList.add("msg-recibido")
         ventanaChat.appendChild(div);
+        ventanaChat.scrollTop = ventanaChat.scrollHeight;
     }
 })
